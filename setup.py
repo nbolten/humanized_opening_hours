@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 import humanized_opening_hours
 
 # `open("README.md", 'r')` doesn't work without this.
-import os, sys
-os.chdir(sys.path[0])
+import os
+os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 setup(
     name="osm_humanized_opening_hours",
